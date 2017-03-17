@@ -1,0 +1,249 @@
+.user-contents {
+    font-family: 'Noticia Text', serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 15pt;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+div#print,
+div#flow {
+    counter-reset: footnote-counter footnote-marker-counter heading section subsection !important;
+}
+.article-title,
+.article-title-print {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    text-transform: initial;
+    align-items: center;
+    justify-content: center;
+}
+.metadata-subtitle,
+.metadata-subtitle-print {
+    font-family: "CMUSerif-Bold", serif;
+    font-size: 13px;
+    font-weight: 400;
+    justify-content: center;
+    display: inline;
+    text-align: justify;
+}
+.metadata-authors,
+.metadata-authors-print {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    break-after: always;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+.metadata-abstract,
+.metadata-abstract-print {
+    font-size: 15px;
+    margin: 1cm 0 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-style: italic;
+    line-height: 0.999000;
+    min-height: 1.5em;
+    display: inline;
+    text-align: justify;
+}
+.metadata-keywords,
+.metadata-keywords-print {
+    font-size: 13pt;
+    padding: 0 2.5em;
+    margin: 15px 0 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-style: italic;
+    line-height: 15pt;
+    display: inline;
+    text-align: justify;
+}
+.article-metadata .metadata,
+.article-metadata .metadata-print {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+.pagination-footnote:before,
+.pagination-footnote > * > *:first-child:before {
+    font-family: 'Noticia Text', serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: center;
+    font-style: normal;
+    vertical-align: super;
+    line-height: 0;
+}
+.pagination-footnote > * > *:first-child:before {
+    margin-right: 5px;
+}
+.pagination-footnote > * > * {
+    font-family: 'Noticia Text', serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.35em;
+}
+.pagination-pagenumber {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left !important;
+}
+.pagination-footnotes {
+    margin-top: 25px;
+}
+figure {
+    font-style: italic;
+    font-size: 12px;
+}
+.user-contents h1,
+.user-contents h2,
+.user-contents h3,
+.user-contents h4,
+.user-contents h5,
+.user-contents h6,
+.user-contents p,
+.user-contents dl,
+.user-contents blockquote,
+.user-contents code,
+.user-contents ol,
+.user-contents ul {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.user-contents h1,
+.user-contents h2,
+.user-contents h3,
+.user-contents h4,
+.user-contents h5,
+.user-contents h6 {
+    font-family: 'Noticia Text', serif;
+    hyphens: none;
+    line-height: 1.5em;
+    font-size: 9pt;
+}
+.user-contents h1 {
+    font-size: 15px;
+    font-weight: 700;
+}
+.user-contents h2 {
+    font-size: 12px;
+    font-weight: 700;
+}
+.user-contents h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
+.user-contents h4 {
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+}
+.article-contents-print h1:before,
+.article-contents h1:before {
+    counter-increment: heading;
+    /* add 1 to heading */
+    
+    content: counter(heading) ". ";
+}
+.article-contents-print h1,
+.article-contents h1 {
+    counter-reset: subheading section;
+    /* set section to 0 */
+}
+.article-contents-print h2:before,
+.article-contents h2:before {
+    content: counter(heading) "." counter(subheading) " ";
+    counter-increment: subheading subsection;
+}
+.article-contents-print h2,
+.article-contents h2 {
+    counter-reset: section;
+}
+.article-contents-print h3:before,
+.article-contents h3:before {
+    content: counter(heading) "." counter(subheading) "." counter(section) " ";
+    counter-increment: section;
+}
+.article-contents-print h3,
+.article-contents h3 {
+    counter-reset: subsection;
+}
+/*unordered lists (<ul>) - the list items are marked with bullets*/
+/*ordered lists (<ol>) - the list items are marked with numbers or letters*/
+/*Anything added to the <ol> or <ul> tag, affects the entire list, while properties added to the <li> tag will affect the individual list items*/
+
+.user-contents p,
+.user-contents ol li,
+.user-contents ul li {
+    font-size: 9pt;
+    margin: auto;
+    line-height: 15pt;
+    text-indent: 0;
+    margin-block-start: 7px;
+    margin-inline-start: 5px;
+}
+.user-contents strong {
+    font-weight: 700;
+}
+.user-contents em {
+    font-style: italic;
+}
+.user-contents ul,
+.user-contents ol {
+    padding-left: 15px;
+}
+.user-contents ul {
+    list-style: disc;
+    /*A filled circle*/
+}
+.user-contents ol {
+    list-style: decimal;
+}
+.user-contents blockquote {
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+.user-contents code {
+    display: block;
+    font-family: "Courier New", Courier, mono-space;
+    font-size: 13px;
+    line-height: 1.75em;
+}
+#flow .article-bibliography {
+    background-color: lightgrey;
+}
+#flow .article-bibliography p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+#flow .article-bibliography ol li {
+    counter-increment: list-order;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-left: 1.1em;
+    font-size: 0.923em;
+}
+.equation {
+    margin: 3pt 0;
+    align-items: center;
+    justify-content: center font-size: 13px;
+}
