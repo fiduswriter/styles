@@ -4,7 +4,6 @@ div#print {
 div#flow {
     font-size: 12pt;
 }
-
 .user-contents {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
@@ -57,7 +56,7 @@ div#print .article-subtitle {
     hyphens: none;
 }
 .article-abstract {
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin: 1cm 0 0;
     margin-left: 50px;
     margin-right: 50px;
@@ -74,7 +73,7 @@ div#print .article-subtitle {
     margin-left: 50px;
     margin-right: 50px;
     font-style: italic;
-    line-height: 1.6em;
+    line-height: 1.2em;
     display: inline;
     text-align: justify;
 }
