@@ -1,0 +1,231 @@
+/** @file A document style definition. 
+ ACM Style
+*/
+
+.user-contents {
+    font-family: 'Noticia Text', serif;
+    font-weight: 400;
+    font-size: 9pt;
+    line-height: 15pt;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+div#print,
+div#flow {
+    counter-reset: footnote-counter footnote-marker-counter heading section subsection !important;
+}
+.article-title,
+.article-title-print {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 0 0.333em;
+    font-size: 18pt;
+    font-weight: 700;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+}
+.metadata-subtitle,
+.metadata-subtitle-print {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+}
+.metadata-authors,
+.metadata-authors-print {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    break-after: always;
+    display: center;
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.metadata-abstract,
+.metadata-abstract-print {
+    margin: 0 0 0.5em;
+    line-height: 15pt;
+    column-count: 2;
+    column-fill: auto;
+    -moz-column-count: 2;
+}
+.metadata-keywords,
+.metadata-keywords-print {
+    margin: 0 -10 0.5em;
+    line-height: 15pt;
+}
+.article-metadata .metadata,
+.article-metadata .metadata-print {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+.pagination-footnote:before,
+.pagination-footnote > * > *:first-child:before {
+    font-family: 'Noticia Text', serif;
+    font-weight: 700;
+    font-size: 9pt;
+    text-align: left;
+    font-style: normal;
+    vertical-align: super;
+    line-height: 0;
+}
+.pagination-footnote > * > *:first-child:before {
+    margin-right: 5px;
+}
+.pagination-footnote > * > * {
+    font-family: 'Noticia Text', serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.35em;
+}
+.pagination-pagenumber {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 9pt;
+    font-weight: 400;
+    text-align: center !important;
+}
+.pagination-footnotes {
+    margin-top: 25px;
+}
+.user-contents h1,
+.user-contents h2,
+.user-contents h3,
+.user-contents h4,
+.user-contents p,
+.user-contents dl,
+.user-contents blockquote,
+.user-contents code,
+.user-contents ol,
+.user-contents ul {
+    margin-bottom: 18px;
+}
+.user-contents h1,
+.user-contents h2,
+.user-contents h3,
+.user-contents h4 {
+    font-family: 'Noticia Text', serif;
+    font-weight: 700;
+    hyphens: none;
+    line-height: 1.0 em;
+}
+.user-contents h1 {
+    font-size: 12pt;
+    font-weight: 700;
+}
+.user-contents h2 {
+    font-size: 12pt;
+    font-weight: 700;
+}
+.user-contents h3 {
+    font-size: 12pt;
+    font-weight: 700;
+}
+.user-contents h4 {
+    margin: 1.33333333em 0 0 0;
+    font-size: 11pt;
+    font-weight: 400;
+    font-style: italic;
+}
+.article-contents {
+    column-count: 2;
+    column-fill: auto;
+    -moz-column-count: 2;
+}
+.article-contents-print h1:before,
+.article-contents h1:before {
+    counter-increment: heading;
+    /* add 1 to heading */
+    
+    content: counter(heading) ". ";
+}
+.article-contents-print h1,
+.article-contents h1 {
+    counter-reset: subheading section;
+    /* set section to 0 */
+}
+.article-contents-print h2:before,
+.article-contents h2:before {
+    content: counter(heading) "." counter(subheading) " ";
+    counter-increment: subheading subsection;
+}
+.article-contents-print h2,
+.article-contents h2 {
+    counter-reset: section;
+}
+.article-contents-print h3:before,
+.article-contents h3:before {
+    content: counter(heading) "." counter(subheading) "." counter(section) " ";
+    counter-increment: section;
+}
+.article-contents-print h3,
+.article-contents h3 {
+    counter-reset: subsection;
+}
+/*unordered lists (<ul>) - the list items are marked with bullets*/
+/*ordered lists (<ol>) - the list items are marked with numbers or letters*/
+/*Anything added to the <ol> or <ul> tag, affects the entire list, while properties added to the <li> tag will affect the individual list items*/
+
+.user-contents p,
+.user-contents ol li,
+.user-contents ul li {
+    font-size: 9pt;
+    margin: 0 0 0.5em;
+    line-height: 18pt;
+    text-indent: 0;
+    counter-reset: figures;
+}
+.user-contents strong {
+    font-weight: 700;
+}
+.user-contents em {
+    font-style: italic;
+}
+.user-contents ul,
+.user-contents ol {
+    padding-left: 15px;
+}
+.user-contents ul {
+    list-style: disc;
+    /*A filled circle*/
+}
+.user-contents ol {
+    list-style: decimal;
+}
+.user-contents blockquote {
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+.user-contents code {
+    display: block;
+    font-family: 'Courier', monospace;
+    font-size: 13px;
+    line-height: 1.75em;
+    white-space: pre-line;
+}
+.article-bibliography p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.figure {
+    counter-increment: figures;
+}
+.figcaption:before {
+    content: "Fig. " counter(figures) " - ";
+}
+.equation {
+    margin: 3pt 0;
+    align-items: center;
+    justify-content: center font-size: 13px;
+}
+.pagination-page .pagination-contents-container {
+    right: 80px !important;
+    left: 80px !important;
+}
