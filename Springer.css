@@ -14,7 +14,7 @@ div#flow {
 }
 div#print,
 div#flow {
-    counter-reset: footnote-counter footnote-marker-counter heading section subsection !important;
+    counter-reset: footnote-counter footnote-marker-counter heading section subsection figure-cat-0 figure-cat-1 figure-cat-2 !important;
 }
 .article-title {
     margin-bottom: 30px;
@@ -22,7 +22,8 @@ div#flow {
     font-weight: 700;
     text-transform: initial;
 }
-.article-title, .article-part.metadata {
+.article-title,
+.article-part.metadata {
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -38,7 +39,7 @@ div#print .article-title {
     display: inline;
     text-align: justify;
 }
-div#print .article-subtitle {
+div#print .article-subtitle:not([data-hidden]) {
     display: flex;
     justify-content: center;
 }
@@ -112,7 +113,7 @@ div#print .article-authors {
     text-align: left !important;
 }
 .pagination-footnotes {
-    margin-top: 25px;
+    padding-top: 25px;
 }
 figure {
     font-style: italic;
@@ -160,7 +161,7 @@ figure {
     font-weight: 400;
     font-style: italic;
 }
-.article-body h1:before {
+.article-body h1:not(:empty):before {
     counter-increment: heading;
     /* add 1 to heading */
     
@@ -168,27 +169,31 @@ figure {
     width: 2em;
     display: inline-block;
 }
-.article-body h1 {
+.article-body h1:not(:empty) {
     counter-reset: subheading section;
     /* set section to 0 */
 }
-.article-body h2:before {
+.article-body h2:not(:empty):before {
     content: counter(heading) "." counter(subheading) " ";
     counter-increment: subheading subsection;
     width: 2em;
     display: inline-block;
 }
-.article-body h2 {
+.article-body h2:not(:empty) {
     counter-reset: section;
 }
-.article-body h3:before {
+.article-body h3:not(:empty):before {
     content: counter(heading) "." counter(subheading) "." counter(section) " ";
     counter-increment: section;
     width: 2em;
     display: inline-block;
 }
-.article-body h3 {
+.article-body h3:not(:empty) {
     counter-reset: subsection;
+}
+div#print .article-body,
+.pagination-footnote > * > * {
+    font-size: 1em;
 }
 /*unordered lists (<ul>) - the list items are marked with bullets*/
 /*ordered lists (<ol>) - the list items are marked with numbers or letters*/
@@ -255,5 +260,21 @@ figure {
     font-size: 1.3em;
 }
 .pagination-page .pagination-main-contents-container {
-    height: 927px;
+    height: 957px;
+}
+div#print table {
+    border-collapse: initial;
+    border-spacing: initial;
+    margin-bottom: 10px;
+}
+div#print tr,
+div#print td {
+    padding: 4px;
+    border: 1px solid black;
+}
+div#print figure {
+    margin: 0 0 10px 0;
+}
+.article-bibliography-header:before {
+    content: 'References';
 }
