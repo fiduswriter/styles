@@ -21,12 +21,12 @@ div#flow {
     margin: 0 0 0.333em;
     font-size: 2em;
     font-weight: 700;
-    display: flex;
     text-transform: capitalize;
-    align-items: center;
 }
 div#print .article-title {
     justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .article-subtitle {
     font-family: 'Source Sans Pro', sans-serif;
@@ -40,12 +40,14 @@ div#print .article-subtitle {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     break-after: always;
-    display: center;
-    text-align: center;
     font-size: 1.25em;
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: none;
+}
+div#print .article-authors {
+    display: center;
+    text-align: center;
 }
 .article-abstract {
     margin: 0 0 0.5em;
