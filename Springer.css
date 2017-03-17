@@ -1,8 +1,13 @@
+div#print {
+    font-size: 9pt;
+}
+div#flow {
+    font-size: 12pt;
+}
 .user-contents {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
-    font-size: 0.8em;
-    line-height: 15pt;
+    line-height: 1.25em;
     text-align: justify;
     word-wrap: break-word;
     hyphens: auto;
@@ -14,7 +19,7 @@ div#flow {
 .article-title {
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 30px;
-    font-size: 19px;
+    font-size: 2em;
     font-weight: 700;
     text-align: center;
     margin-left: 50px;
@@ -28,7 +33,7 @@ div#print .article-title {
 }
 .article-subtitle {
     font-family: "CMUSerif-Bold", serif;
-    font-size: 13px;
+    font-size: 1.5em;
     font-weight: 400;
     display: inline;
     text-align: justify;
@@ -81,7 +86,7 @@ div#print .article-subtitle {
 .pagination-footnote > * > *:first-child:before {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
-    font-size: 9px;
+    font-size: 1em;
     text-align: center;
     font-style: normal;
     vertical-align: super;
@@ -93,12 +98,12 @@ div#print .article-subtitle {
 .pagination-footnote > * > * {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 1.3em;
     line-height: 1.35em;
 }
 .pagination-pagenumber {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 1.25em;
     font-weight: 400;
     text-align: left !important;
 }
@@ -107,7 +112,7 @@ div#print .article-subtitle {
 }
 figure {
     font-style: italic;
-    font-size: 12px;
+    font-size: 1.25em;
 }
 .user-contents h1,
 .user-contents h2,
@@ -133,22 +138,22 @@ figure {
     font-family: 'Noticia Text', serif;
     hyphens: none;
     line-height: 1.5em;
-    font-size: 9pt;
+    font-size: 1em;
 }
 .user-contents h1 {
-    font-size: 15px;
+    font-size: 1.4em;
     font-weight: 700;
 }
 .user-contents h2 {
-    font-size: 12px;
+    font-size: 1.3em;
     font-weight: 700;
 }
 .user-contents h3 {
-    font-size: 12px;
+    font-size: 1.2em;
     font-weight: 700;
 }
 .user-contents h4 {
-    font-size: 10px;
+    font-size: 1.1em;
     font-weight: 400;
     font-style: italic;
 }
@@ -183,9 +188,9 @@ figure {
 .user-contents p,
 .user-contents ol li,
 .user-contents ul li {
-    font-size: 9pt;
+    font-size: 1em;
     margin: auto;
-    line-height: 15pt;
+    line-height: 1.4em;
     text-indent: 0;
     margin-block-start: 7px;
     margin-inline-start: 5px;
@@ -211,20 +216,20 @@ figure {
     font-style: italic;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 2.2em;
     line-height: 1.4em;
 }
 .user-contents code {
     display: block;
     font-family: "Courier New", Courier, mono-space;
-    font-size: 13px;
+    font-size: 1.3em;
     line-height: 1.75em;
 }
 #flow .article-bibliography {
     background-color: lightgrey;
 }
 #flow .article-bibliography p {
-    font-size: 14px;
+    font-size: 1.4em;
     margin-bottom: 18px;
 }
 #flow .article-bibliography ol li {
@@ -238,5 +243,8 @@ figure {
     margin: 3pt 0;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 1.3em;
+}
+.pagination-page .pagination-main-contents-container {
+    height: 927px;
 }
