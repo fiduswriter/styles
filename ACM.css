@@ -14,7 +14,7 @@ div#print {
 }
 div#print,
 div#flow {
-    counter-reset: footnote-counter footnote-marker-counter heading section subsection !important;
+    counter-reset: footnote-counter footnote-marker-counter heading section subsection figure-cat-0 figure-cat-1 figure-cat-2 !important;
 }
 .article-title {
     font-family: 'Source Sans Pro', sans-serif;
@@ -190,10 +190,12 @@ div#print .article-body,
     text-indent: 0;
     counter-reset: figures;
 }
-.user-contents strong {
+.user-contents strong,
+div#print strong {
     font-weight: 700;
 }
-.user-contents em {
+.user-contents em,
+div#print em {
     font-style: italic;
 }
 .user-contents ul,
@@ -243,4 +245,26 @@ div#print .article-body,
 }
 .pagination-page .pagination-main-contents-container {
     height: 927px;
+}
+div#print table {
+    border-collapse: initial;
+    border-spacing: initial;
+    margin-bottom: 30px;
+}
+div#print tr,
+div#print td {
+    padding: 4px;
+    border: 1px solid black;
+}
+div#print figure {
+    margin: 0 0 30px 0;
+}
+.article-bibliography-header:before {
+    content: 'REFERENCES';
+}
+div#print .article-bibliography {
+    margin-top: 30px;
+    column-count: 2;
+    column-fill: auto;
+    -moz-column-count: 2;
 }
