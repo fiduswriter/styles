@@ -45,6 +45,8 @@ div#print .article-subtitle {
 .article-abstract {
     margin: 0 0 0.5em;
     line-height: 15pt;
+}
+div#print .article-abstract {
     column-count: 2;
     column-fill: auto;
     -moz-column-count: 2;
@@ -125,7 +127,7 @@ div#print .article-subtitle {
     font-weight: 400;
     font-style: italic;
 }
-.article-body {
+div#print .article-body {
     column-count: 2;
     column-fill: auto;
     -moz-column-count: 2;
