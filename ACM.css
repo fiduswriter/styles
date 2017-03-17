@@ -1,11 +1,16 @@
 .user-contents {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
-    font-size: 9pt;
-    line-height: 15pt;
+    line-height: 18pt;
     text-align: justify;
     word-wrap: break-word;
     hyphens: auto;
+}
+div#flow {
+    font-size: 12pt;
+}
+div#print {
+    font-size: 9pt;
 }
 div#print,
 div#flow {
@@ -14,7 +19,7 @@ div#flow {
 .article-title {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0 0 0.333em;
-    font-size: 18pt;
+    font-size: 2em;
     font-weight: 700;
     display: flex;
     text-transform: capitalize;
@@ -25,7 +30,7 @@ div#print .article-title {
 }
 .article-subtitle {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 1.6em;
     font-weight: 400;
 }
 div#print .article-subtitle {
@@ -37,7 +42,7 @@ div#print .article-subtitle {
     break-after: always;
     display: center;
     text-align: center;
-    font-size: 12pt;
+    font-size: 1.25em;
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -46,10 +51,20 @@ div#print .article-subtitle {
     margin: 0 0 0.5em;
     line-height: 15pt;
 }
+.article-part.article-abstract::before {
+    content: 'ABSTRACT';
+    color: black;
+    font-weight: 700;
+}
 div#print .article-abstract {
     column-count: 2;
     column-fill: auto;
     -moz-column-count: 2;
+}
+.article-part.article-keywords::before {
+    content: 'Keywords\A';
+    color: black;
+    font-weight: 700;
 }
 .article-keywords {
     margin: 0 -10 0.5em;
@@ -64,7 +79,7 @@ div#print .article-abstract {
 .pagination-footnote > * > *:first-child:before {
     font-family: 'Noticia Text', serif;
     font-weight: 700;
-    font-size: 9pt;
+    font-size: 1em;
     text-align: left;
     font-style: normal;
     vertical-align: super;
@@ -76,12 +91,12 @@ div#print .article-abstract {
 .pagination-footnote > * > * {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 1.1em;
     line-height: 1.35em;
 }
 .pagination-pagenumber {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 9pt;
+    font-size: 1em;
     font-weight: 400;
     text-align: center !important;
 }
@@ -110,20 +125,20 @@ div#print .article-abstract {
     line-height: 1.0 em;
 }
 .user-contents h1 {
-    font-size: 12pt;
+    font-size: 1.4em;
     font-weight: 700;
 }
 .user-contents h2 {
-    font-size: 12pt;
+    font-size: 1.3em;
     font-weight: 700;
 }
 .user-contents h3 {
-    font-size: 12pt;
+    font-size: 1.2em;
     font-weight: 700;
 }
 .user-contents h4 {
     margin: 1.33333333em 0 0 0;
-    font-size: 11pt;
+    font-size: 1.1em;
     font-weight: 400;
     font-style: italic;
 }
@@ -156,6 +171,10 @@ div#print .article-body {
 .article-body h3 {
     counter-reset: subsection;
 }
+div#print .article-body,
+.pagination-footnote > * > * {
+    font-size: 1em;
+}
 /*unordered lists (<ul>) - the list items are marked with bullets*/
 /*ordered lists (<ol>) - the list items are marked with numbers or letters*/
 /*Anything added to the <ol> or <ul> tag, affects the entire list, while properties added to the <li> tag will affect the individual list items*/
@@ -163,7 +182,7 @@ div#print .article-body {
 .user-contents p,
 .user-contents ol li,
 .user-contents ul li {
-    font-size: 9pt;
+    font-size: 1em;
     margin: 0 0 0.5em;
     line-height: 18pt;
     text-indent: 0;
@@ -190,18 +209,18 @@ div#print .article-body {
     font-style: italic;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 1.8em;
     line-height: 1.4em;
 }
 .user-contents code {
     display: block;
     font-family: 'Courier', monospace;
-    font-size: 13px;
+    font-size: 1.1em;
     line-height: 1.75em;
     white-space: pre-line;
 }
 .article-bibliography p {
-    font-size: 14px;
+    font-size: 1.2em;
     margin-bottom: 18px;
 }
 .figure {
@@ -214,9 +233,12 @@ div#print .article-body {
     margin: 3pt 0;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 1.1em;
 }
 .pagination-page .pagination-contents-container {
     right: 80px !important;
     left: 80px !important;
+}
+.pagination-page .pagination-main-contents-container {
+    height: 927px;
 }
