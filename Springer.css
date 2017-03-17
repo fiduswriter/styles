@@ -4,6 +4,7 @@ div#print {
 div#flow {
     font-size: 12pt;
 }
+
 .user-contents {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
@@ -46,7 +47,7 @@ div#print .article-subtitle {
     font-weight: 400;
     break-after: always;
     text-align: center;
-    font-size: 13px;
+    font-size: 1.3em;
     text-decoration: none;
     margin-top: 20pt;
     margin-bottom: 20pt;
@@ -56,7 +57,7 @@ div#print .article-subtitle {
     hyphens: none;
 }
 .article-abstract {
-    font-size: 15px;
+    font-size: 1.6em;
     margin: 1cm 0 0;
     margin-left: 50px;
     margin-right: 50px;
@@ -67,13 +68,13 @@ div#print .article-subtitle {
     text-align: justify;
 }
 .article-keywords {
-    font-size: 13pt;
+    font-size: 1.3em;
     padding: 0 2.5em;
     margin: 15px 0 0;
     margin-left: 50px;
     margin-right: 50px;
     font-style: italic;
-    line-height: 15pt;
+    line-height: 1.6em;
     display: inline;
     text-align: justify;
 }
@@ -217,7 +218,7 @@ figure {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 2.2em;
-    line-height: 1.4em;
+    line-height: 2.3em;
 }
 .user-contents code {
     display: block;
