@@ -161,6 +161,16 @@ figure {
     font-weight: 400;
     font-style: italic;
 }
+.user-contents h5 {
+    font-size: 1.1em;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.user-contents h6 {
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: underline;
+}
 .article-body h1:not(:empty):before {
     counter-increment: heading;
     /* add 1 to heading */
