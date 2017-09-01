@@ -120,7 +120,9 @@ div#print .article-abstract {
 .user-contents h1,
 .user-contents h2,
 .user-contents h3,
-.user-contents h4 {
+.user-contents h4,
+.user-contents h5,
+.user-contents h6 {
     font-family: 'Noticia Text', serif;
     font-weight: 700;
     hyphens: none;
@@ -143,6 +145,18 @@ div#print .article-abstract {
     font-size: 1.1em;
     font-weight: 400;
     font-style: italic;
+}
+.user-contents h5 {
+    margin: 1.33333333em 0 0 0;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.user-contents h6 {
+    margin: 1.33333333em 0 0 0;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: underline;
 }
 div#print .article-body {
     column-count: 2;
